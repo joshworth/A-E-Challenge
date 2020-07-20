@@ -1,0 +1,13 @@
+.top-ribbon {
+    padding: 25px;
+    width: 100%;
+    background: #456;
+    color: white;
+    text-align: center;
+}
+
+.menu-item {
+    float: right;
+    padding: 5px;
+    margin: 5px;
+}

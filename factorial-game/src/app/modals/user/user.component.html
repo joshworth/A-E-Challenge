@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>User Details</h1>
+
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label>email</mat-label>
+        <input matInput [(ngModel)]="data.email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput [(ngModel)]="data.first_name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput [(ngModel)]="data.last_name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Role</mat-label>
+        <select matNativeControl [(ngModel)]="data.role">
+            <option value="Guest" selected>Guest</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </mat-form-field>
+    <mat-form-field *ngIf="!data.id">
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="data.password">
+    </mat-form-field>
+    <mat-form-field *ngIf="!data.id">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput [(ngModel)]="data.password2">
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Save</button>
+    <button mat-button [mat-dialog-close]="data.city" cdkFocusInitial>Close</button>
+</div>

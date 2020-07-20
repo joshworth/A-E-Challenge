@@ -1,0 +1,103 @@
+.main {
+    margin: 5em;
+    padding: 2em;
+    width: 80%;
+    background: white;
+    color: black;
+}
+
+.info-div {
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+    background: #456;
+    color: white;
+}
+
+.number-cell {
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    padding: 3em;
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.factor-cell {
+    background-color: white;
+    color: red;
+}
+
+.blink-div {
+    color: #fff;
+    animation: blinkingBackground 2s infinite;
+}
+
+@keyframes blinkingBackground {
+    0% {
+        background-color: #10c018;
+    }
+    25% {
+        background-color: #1056c0;
+    }
+    50% {
+        background-color: #ef0a1a;
+    }
+    75% {
+        background-color: #254878;
+    }
+    100% {
+        background-color: #04a1d5;
+    }
+}
+
+.non-factor-cell {
+    background-color: white;
+    color: black;
+}
+
+.default-cell-1 {
+    background-color: rgb(236, 170, 211);
+    color: black;
+}
+
+.default-cell-2 {
+    background-color: blue;
+    color: white;
+}
+
+.default-cell-3 {
+    background-color: rgb(204, 183, 144);
+    color: black;
+}
+
+.default-cell-4 {
+    background-color: gray;
+    color: white;
+}
+
+.default-cell-5 {
+    background-color: green;
+    color: white;
+}
+
+.default-cell-6 {
+    background-color: rgb(117, 110, 68);
+    color: black;
+}
+
+.default-cell-7 {
+    background-color: black;
+    color: white;
+}
+
+.default-cell-8 {
+    background-color: lightblue;
+    color: black;
+}
+
+.default-cell-1 {
+    background-color: yellow;
+    color: black;
+}

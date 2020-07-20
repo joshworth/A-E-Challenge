@@ -1,0 +1,9 @@
+<div class="top-ribbon" *ngIf="authService.authStatus">
+Welcome
+<div class="menu-item">[{{authService.authUser}}]</div> 
+<div class="menu-item" *ngIf="authService.isAdmin"><a [routerLink]="['/admin/']">Users</a></div> 
+<div class="menu-item"><a [routerLink]="['/home/']">Home</a></div>
+<div class="menu-item"><a [routerLink]="['/login']">Logout</a></div>
+ 
+</div>
+<router-outlet></router-outlet>

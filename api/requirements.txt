@@ -1,0 +1,5 @@
+flask
+Flask-JWT
+sqlalchemy
+flask-cors
+    

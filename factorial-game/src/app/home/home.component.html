@@ -1,0 +1,11 @@
+<div class="main">
+<div><p>Select a number in the grid.</p></div>
+<table>
+    <tr *ngFor="let row of numberGrid">
+        <td *ngFor="let cell of row">
+            <div [ngClass]="cell.style" (click)="cellClick(cell.value)">{{cell.value}}</div>
+        </td>
+    </tr>
+</table>
+<div class="info-div" *ngIf="result.length>0"><p>{{result}}</p></div>
+</div>
